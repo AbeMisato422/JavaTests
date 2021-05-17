@@ -25,20 +25,21 @@ public class PracticeTest5 {
 		}
 
 //練習問題２
-		int count = 0;
+		int total = 0;
 		for(int x = 1; x <= 100; x++) {
 			if(x%7 == 0) {
-				count = count + x;
+				total = total + x;
+				//コンソール出力
 			}
 		}
-		System.out.println("7の倍数の総合計は" + count);
+		System.out.println("7の倍数の総合計は" + total);
 
 //練習問題３
 		for (int num1 = 1; num1 <= 9; num1++) {
 			for (int num2 = 1; num2 <= 9; num2++) {
-				System.out.println(num1*num2);
+				System.out.printf("%3d", num1*num2);
 			}
-			//System.out.println();
+			System.out.println();
 		}
 	}
 

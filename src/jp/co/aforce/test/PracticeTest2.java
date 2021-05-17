@@ -19,11 +19,11 @@ public class PracticeTest2 {
 		System.out.println((y % x));
 
 	//練習問題３
-		double a = y * z;
-		System.out.println(a);
+		double result = y * z;//わかりやすい変数名
+		System.out.println(result);
 
 	//練習問題４
-		System.out.println(++a);
+		System.out.println(++result);
 
 	//練習問題５
 		int age = 23;
@@ -32,14 +32,16 @@ public class PracticeTest2 {
 
 	    if(age>randomNumber) {
 	    	System.out.println("私の方が年上です");
-	    	System.out.println("randomNumber="+randomNumber);
+	    	//System.out.println("randomNumber="+randomNumber);
 	    }else if(age<randomNumber) {
 	    	System.out.println("私の方が年下です");
-	    	System.out.println("randomNumber="+randomNumber);
+	    	//System.out.println("randomNumber="+randomNumber);
 	    }else if(age == randomNumber) {
 	    	System.out.println("私と同い年です");
-	    	System.out.println("randomNumber="+randomNumber);
+	    	//System.out.println("randomNumber="+randomNumber);
 
 		}
+	    //外にまとめる
+	    System.out.println("randomNumber="+randomNumber);
 	}
 }

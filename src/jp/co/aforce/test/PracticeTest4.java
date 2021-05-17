@@ -1,7 +1,6 @@
 package jp.co.aforce.test;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class PracticeTest4 {
 
@@ -9,6 +8,7 @@ public class PracticeTest4 {
 
 //練習問題１
 	//文字列を比較するときはequalsを使う方が適切であるので、②が適切だと思う。
+		//
 //練習問題２
 		ArrayList<String> animals = new ArrayList<>();
 
@@ -17,19 +17,21 @@ public class PracticeTest4 {
 		animals.add("うさぎ");
 		animals.add("へび");
 //練習問題３
-		String likeAnimals = "アザラシ";
+		String likeAnimal = "アザラシ";
 
-		if(Arrays.asList(animals).contains(likeAnimals)) {
-			System.out.println(likeAnimals + "はリストに含まれています");
+		if(animals.contains(likeAnimal)) {
+			System.out.println(likeAnimal + "はリストに含まれています");
 
 		}else {
-			System.out.println(likeAnimals + "はリストに含まれていません");
+			System.out.println(likeAnimal + "はリストに含まれていません");
 		}
 
 //練習問題４
-		int birthMonth = 4;
+		int myBirthMonth = 4;
+		//publicHolidayに代入、後でまとめてコンソール出力もあり。
+		//なしの月は最後にまとめてbreakなしもあり。
 
-		switch(birthMonth) {
+		switch(myBirthMonth) {
 		case 1:
 			System.out.println("元日, 成人の日");
 			break;
@@ -70,5 +72,6 @@ public class PracticeTest4 {
 
 
 		//値が1～12の整数で決まりきっているから。
+		//if文は上から順に処理するが、switchは該当箇所にジャンプするし、見やすいから。（解説後付け足し）
 	}
 }

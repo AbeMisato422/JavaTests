@@ -9,6 +9,8 @@ public class Employee {
 		private String sex;
 		private int age;
 
+		//getter setterなくてもできる
+
 		int getNum() {
 			return this.num;
 		}
