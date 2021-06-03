@@ -5,7 +5,7 @@ import java.util.Random;
 public class PracticeTest5 {
 
 	public static void main(String[] args) {
-//練習問題１
+//練習問題１　変数使って出力を最後にまとめてもよい
 		Random rand = new Random();
 		int fortune = rand.nextInt(4)+1;
 
@@ -28,8 +28,11 @@ public class PracticeTest5 {
 		int total = 0;
 		for(int x = 1; x <= 100; x++) {
 			if(x%7 == 0) {
+				//コンソール出力忘れ
+				System.out.println(x);
 				total = total + x;
-				//コンソール出力
+				//↑total + = x;でも同じ
+
 			}
 		}
 		System.out.println("7の倍数の総合計は" + total);

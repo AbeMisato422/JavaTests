@@ -13,6 +13,7 @@ public class PracticeTest2 {
 	//練習問題１
 
 		System.out.println((x * y));
+		System.out.println(x * y);
 
 	//練習問題２
 		System.out.println((y / x));

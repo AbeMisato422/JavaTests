@@ -8,7 +8,11 @@ public class PracticeTest4 {
 
 //練習問題１
 	//文字列を比較するときはequalsを使う方が適切であるので、②が適切だと思う。
-		//
+		//基本型（数値、文字コード、boolean）（値そのものをスタック領域に保持している）は
+		//==,
+		//参照型（String、日付、コレクション、クラスなど）は値そのものはヒープ領域にあり、スタック領域に
+		//ロッカーの鍵がある==で比較するのはスタック領域。ヒープ領域を比較するequalsを使うのが適切。
+		//文字列はequals(←文字), 基本型は==（←数字っぽい）
 //練習問題２
 		ArrayList<String> animals = new ArrayList<>();
 
@@ -29,7 +33,7 @@ public class PracticeTest4 {
 //練習問題４
 		int myBirthMonth = 4;
 		//publicHolidayに代入、後でまとめてコンソール出力もあり。
-		//なしの月は最後にまとめてbreakなしもあり。
+		//なしの月は最後にまとめてbreakなしもあり。書き直してもよい
 
 		switch(myBirthMonth) {
 		case 1:

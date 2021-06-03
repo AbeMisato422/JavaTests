@@ -4,7 +4,7 @@ public class MinMax {
 
 //練習問題２
 
-
+//最初にa入れといて、ってやり方もある
 	public int getMaxValue(int a, int b, int c){//public
 		if(a > b && a > c) {
 			return a;

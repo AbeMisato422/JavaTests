@@ -13,7 +13,7 @@ public class PracticeTest1 {
 				int x = 480;
 				int price =(int) ((int) x *(1+TAX));//キャスト変換、Mathクラスもある
 				System.out.println("この商品の値段は"+price+"円です");
-
+				System.out.println("この商品の値段は"+Math.round(x *(1+TAX))+"円です");
 		//練習問題３
 				String name = "阿部美里";
 				System.out.println(name);

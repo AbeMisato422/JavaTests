@@ -9,22 +9,47 @@ public class Employee {
 		private String sex;
 		private int age;
 
-		//getter setterなくてもできる
 
-		int getNum() {
-			return this.num;
+		//コンストラクタ定義 別にコレクションではない
+		Employee(int number, String name, String gender, int age){
+			this.num = number;
+			this.name = name;
+			this.sex = gender;
+			this.age = age;
+		}
+		//getter。setterなくてもできる
+
+		public int getNum() {
+			return this.num;//thisなくてもいけるみたいだけど
 		}
 
-		String getName() {
+		public String getName() {
 			return this.name;
 		}
 
-		String getSex() {
+		public String getSex() {
 			return this.sex;
 		}
 
-		int getAge() {
+		public int getAge() {
 			return this.age;
+		}
+
+		//今回はコンストラクタ使ってるから使わないけど比較用setter
+		public void setNum(int number) {
+			this.num = number;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+		public void setSex(String gender) {
+			this.sex = gender;
+		}
+
+		public void setAge(int age) {
+			this.age = age;
 		}
 
 
